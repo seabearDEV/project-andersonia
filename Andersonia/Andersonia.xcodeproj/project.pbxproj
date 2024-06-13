@@ -23,7 +23,45 @@
 		EAAE7A7D2C1B440600C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				BiographyView.swift,
 				MainView.swift,
+				MoviesView.swift,
+				MoviesView/MovieDetailView.swift,
+			);
+			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
+		};
+		EAAE7A832C1B66E500C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				movie_summaries.json,
+			);
+			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
+		};
+		EAAE7A8E2C1B711500C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataService.swift,
+			);
+			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
+		};
+		EAAE7A912C1B714E00C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Movie.swift,
+			);
+			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
+		};
+		EAAE7A972C1B7E6800C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MovieCard.swift,
+			);
+			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
+		};
+		EAAE7AA12C1B8F9E00C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Images.swift,
 			);
 			target = EAAE7A6A2C1B3C8400C21219 /* Andersonia */;
 		};
@@ -31,6 +69,11 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EAAE7A7C2C1B440000C21219 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7A7D2C1B440600C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		EAAE7A7E2C1B669900C21219 /* Data */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7A832C1B66E500C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Data; sourceTree = "<group>"; };
+		EAAE7A842C1B671200C21219 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7A972C1B7E6800C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		EAAE7A852C1B671900C21219 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7A912C1B714E00C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		EAAE7A862C1B672000C21219 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7A8E2C1B711500C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		EAAE7A872C1B672A00C21219 /* Utilities */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EAAE7AA12C1B8F9E00C21219 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Utilities; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +106,13 @@
 		EAAE7A6D2C1B3C8400C21219 /* Andersonia */ = {
 			isa = PBXGroup;
 			children = (
-				EAAE7A6E2C1B3C8400C21219 /* AndersoniaApp.swift */,
+				EAAE7A842C1B671200C21219 /* Components */,
+				EAAE7A7E2C1B669900C21219 /* Data */,
+				EAAE7A852C1B671900C21219 /* Models */,
+				EAAE7A862C1B672000C21219 /* Services */,
+				EAAE7A872C1B672A00C21219 /* Utilities */,
 				EAAE7A7C2C1B440000C21219 /* Views */,
+				EAAE7A6E2C1B3C8400C21219 /* AndersoniaApp.swift */,
 				EAAE7A722C1B3C8500C21219 /* Assets.xcassets */,
 				EAAE7A742C1B3C8500C21219 /* Preview Content */,
 			);
@@ -291,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +369,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

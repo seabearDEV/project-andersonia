@@ -7,18 +7,29 @@
 
 import SwiftUI
 
+// Main view (app entry)
 struct MainView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            MoviesView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "movieclapper.fill")
+                        Text("Movies")
+                    }
+                }
+            BiographyView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.fill")
+                        Text("Biography")
+                    }
+                }
         }
-        .padding()
     }
 }
 
+// Xcode preview
 #Preview {
     MainView()
 }
